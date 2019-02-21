@@ -417,8 +417,6 @@ const getValue = (expr: Expression) => {
     const parsed = parseValue(expr.getValue());
 
     if (parsed === expr.getValue()) {
-      console.log('here');
-      console.log({ parsed, value: expr.getValue() });
       throw new Error('Parsing error!');
     }
 
@@ -437,7 +435,6 @@ const getValue = (expr: Expression) => {
     return String(expr.getValue());
   }
 
-  console.log('there');
   throw new Error('Parsing error!');
 };
 
@@ -480,8 +477,6 @@ const parse = (input: string) => {
   }
 
   const parsedObj = parsed[0];
-
-  // console.log(parsedObj)
 
   const result = getValue(parsedObj);
 
