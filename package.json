@@ -1,7 +1,7 @@
 {
-  "name": "node-boilerplate",
+  "name": "json",
   "version": "0.0.1",
-  "description": "Boilerplate",
+  "description": "JSON",
   "main": "build/index.js",
   "author": "maciejcieslar",
   "license": "MIT",
